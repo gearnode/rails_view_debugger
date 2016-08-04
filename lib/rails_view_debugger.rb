@@ -1,4 +1,4 @@
-#require "rails_view_debugger/version"
+require "rails_view_debugger/version"
 require 'logger'
 
 module RailsViewDebugger
