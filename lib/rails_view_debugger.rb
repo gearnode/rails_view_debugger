@@ -5,9 +5,7 @@ module RailsViewDebugger
   LOGGER = Logger.new(STDOUT)
 
   def trace(&block)
-    if block_given?
-      block.call
-    end
+    block.call if block_given?
   rescue => e
     LOGGER.error(e.class)
     LOGGER.error(e.message)
